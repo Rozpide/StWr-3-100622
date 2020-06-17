@@ -1,0 +1,41 @@
+body {
+    background-color: gray;
+}
+
+#spanNum {
+    display: inline-block;
+    border-radius: 25%;
+    background-color: yellow;
+    width: 15px;
+    height: 15px;
+    margin-left: 3px;
+    position: relative;
+    top: 5px;
+}
+
+#pNum {
+    position: relative;
+    color: black;
+    bottom: 5px;
+}
+
+#ulHeader {
+    font-size: 20px;
+    position: relative;
+    bottom: 5px;
+}
+
+#ulHeader>li:hover {
+    transition: 900ms;
+    background-color: lightskyblue;
+    border-radius: 5px;
+}
+
+li{
+    letter-spacing: 7px;
+}
+
+.card{
+    width: 250px !important;
+    height: 300px !important;
+}
