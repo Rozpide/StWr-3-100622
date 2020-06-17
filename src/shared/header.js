@@ -6,13 +6,13 @@ export const Header = () => {
         <div className="row my-2">
 
             <div className="col-md-2">
-                <img src="./src/img/starWarsLogo.png"></img>
+                <img src="img/starWarsLogo.png"></img>
             </div>
 
             <div className="col-md-8">
                 <ul id="ulHeader" className="nav d-flex justify-content-around">
                     <li className="nav-item">
-                        <Link className="nav-link text-white" to="/personajes">Personajes</Link>
+                        <Link className="nav-link text-white" to="/">Personajes</Link>
                     </li>
                     <li className="nav-item">
                     <Link className="nav-link text-white" to="/planetas">Planetas</Link>

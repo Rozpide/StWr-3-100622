@@ -1,8 +1,7 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { Header } from "./header";
+import { Header } from "../shared/header";
 import { Body } from "./body";
-import { Footer } from "./footer";
 import { notFound } from "./notFound";
 import { BodyPlanetas } from "./bodyPlanetas";
 
@@ -15,8 +14,7 @@ export const App = () => {
                 <Header />
                 <hr></hr>
                 <Switch>
-                <Route exact path="/planetas" component={BodyPlanetas} />
-                    <Route exact path="/personajes" component={Body} />
+                    <Route exact path="/planetas" component={BodyPlanetas} />
                     <Route exact path="/" component={Body} />
                     <Route component={notFound} />
                 </Switch>

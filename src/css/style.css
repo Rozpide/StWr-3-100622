@@ -2,6 +2,11 @@ body {
     background-color: gray;
 }
 
+.dropdown{
+    position: relative;
+    top:2px
+}
+
 #spanNum {
     display: inline-block;
     border-radius: 25%;
@@ -35,7 +40,21 @@ li{
     letter-spacing: 7px;
 }
 
+img{
+    height: 65px;
+    width: 110px;
+    position: relative;
+}
+
+.btnFooter:hover{
+    transition: 900ms;
+    background-color: darkorange;
+    border:none;
+}
+
+.card-footer{
+    background:none
+}
 .card{
-    width: 250px !important;
-    height: 300px !important;
+    width: 18rem;
 }
