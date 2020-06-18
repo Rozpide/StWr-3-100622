@@ -6,7 +6,7 @@ export const Header = () => {
         <div className="row my-2">
 
             <div className="col-md-2">
-                <img src="img/starWarsLogo.png"></img>
+                <img className="logo" src="img/starWarsLogo.png"></img>
             </div>
 
             <div className="col-md-8">

@@ -2,9 +2,9 @@ body {
     background-color: gray;
 }
 
-.dropdown{
+.dropdown {
     position: relative;
-    top:2px
+    top: 2px
 }
 
 #spanNum {
@@ -36,25 +36,30 @@ body {
     border-radius: 5px;
 }
 
-li{
+li {
     letter-spacing: 7px;
 }
 
-img{
+.logo {
     height: 65px;
     width: 110px;
     position: relative;
 }
 
-.btnFooter:hover{
+.btnFooter:hover {
     transition: 900ms;
     background-color: darkorange;
-    border:none;
+    border: none;
 }
 
-.card-footer{
-    background:none
+.card-footer {
+    background: none
 }
-.card{
-    width: 18rem;
+
+.card {
+    height: 400px;
+}
+
+.separador {
+    background-color: rgb(187, 36, 36);
 }

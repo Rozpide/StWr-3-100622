@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Spinner } from "./spinner";
+import { Spinner } from "../components/spinner";
 import { CardPlanetas } from "../shared/cardPlanetas";
 
 export const BodyPlanetas = () => {
@@ -27,20 +27,13 @@ export const BodyPlanetas = () => {
     return (
         <>
             <div className="row ">
-
                 {
                     state.planetas.length === 0 ? <Spinner /> :
                         state.planetas.results.map((planeta, index) => {
                             return <CardPlanetas key={index} planeta={planeta} />
                         })
-
-
-
                 }
-
-
-
-
             </div>
-        </>)
+        </>
+    )
 }
