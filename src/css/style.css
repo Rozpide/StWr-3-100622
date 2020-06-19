@@ -1,5 +1,5 @@
 body {
-    background-color: gray;
+    background-color: #6c757d;
 }
 
 .dropdown {
@@ -56,10 +56,38 @@ li {
     background: none
 }
 
+
 .card {
-    height: 400px;
+    height: 470px;
 }
 
 .separador {
     background-color: rgb(187, 36, 36);
+}
+
+#fotoHeaderCard{
+    height: 200px;
+    object-fit: fill;
+}
+
+#cardBodyPlanetas{
+    height: 100px;
+}
+
+#fotoCardPersonaje{
+    width: 80%;
+    height: 400px;
+}
+#fotoCardPlanet{
+    width: 80%;
+    height: 400px;
+}
+.fa-trash{
+    margin: 4px;
+    cursor: pointer;
+}
+
+.corazonActivo{
+    background-color: #ffc107;
+    color: black;
 }

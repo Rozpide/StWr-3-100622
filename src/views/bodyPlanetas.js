@@ -1,39 +1,28 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Spinner } from "../components/spinner";
-import { CardPlanetas } from "../shared/cardPlanetas";
+import  CardPlanetas  from "../shared/cardPlanetas";
+import { Context } from "../store/appContext";
+import Footer from "../shared/footer";
 
 export const BodyPlanetas = () => {
 
-    const [state, setState] = useState({
-        planetas: []
-    })
+    const { store, actions } = useContext(Context)
 
 
-    const getPlanetas = () => {
-        fetch("https://swapi.dev/api/planets")
-            .then(resolve => resolve.json())
-            .then(data => {
-                setState(prevState => {
-                    return { ...prevState, planetas: data }
-                })
-            })
-    }
-
-
-    useEffect(() => {
-        getPlanetas();
-    }, [])
 
     return (
         <>
             <div className="row ">
                 {
-                    state.planetas.length === 0 ? <Spinner /> :
-                        state.planetas.results.map((planeta, index) => {
-                            return <CardPlanetas key={index} planeta={planeta} />
-                        })
+                    store.planets !== null ?
+                        store.planets.results.map((planeta, index) => {
+                            let a= store.favorite.filter((item=>item===planeta.name))
+                            return <CardPlanetas key={index} planeta={planeta} a={a} />
+                        }) :
+                        <Spinner />
                 }
             </div>
+                <Footer />
         </>
     )
 }

@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { getState } from "./flux";
-//Se declara esto, vacio porque luego al hacer las llamadas reemplazaran este valor
+
+
+
+/* Se declara esto, vacio porque luego al hacer las llamadas reemplazaran este valor */
 export const Context = React.createContext(null);
 
 export const inyectContext = (PassedComponent) => {
@@ -18,22 +21,24 @@ export const inyectContext = (PassedComponent) => {
         }));
 
 
-        //Uso esto para que al cargar la pagina ya tenga estos datos
+
+        /* Uso esto para que al cargar la pagina ya tenga estos datos */
         useEffect(() => {
-            state.actions.getCharacters("https://swapi.dev/api/people");
-            state.actions.getPlanets("https://swapi.dev/api/planets");
+            state.actions.getCharacters("https://swapi.dev/api/people/");
+            state.actions.getPlanets("https://swapi.dev/api/planets/");
         }, []);
 
         return (
-            //Le indico que el context provider tendra la informacion del state
+            /* Le indico que el context provider tendra la informacion del state */
             <Context.Provider value={state}>
                 {/* Esa información ira hacia los componentes que tengan el provider */}
                 <PassedComponent {...props} />
             </Context.Provider>
         )
-
-    }//Fin StoreWrapper
+    
+    }/* Fin StoreWrapper */
 
     return StoreWrapper;
 
-} // Fin InyectContext
+
+} /* Fin InyectContext */
