@@ -20,7 +20,7 @@ import { inyectContext } from "../store/appContext";
                     <Route exact path="/personaje/:id" component={Personaje} />
                     <Route exact path="/planetas" component={BodyPlanetas} />
                     <Route exact path="/" component={Body} />
-                    <Route render={() => <h1 className="text-center">Woops! Not found</h1>} />
+                    <Route render={() => <h1 className="text-center">no lo encuentro....</h1>} />
                 </Switch>
             </BrowserRouter>
         </div>
