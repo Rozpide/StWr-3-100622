@@ -18,7 +18,7 @@ import { inyectContext } from "../store/appContext";
                 <Switch>
                 <Route exact path="/planets/:id" component={Planet} />
                     <Route exact path="/people/:id" component={Personaje} />
-                    <Route exact path="/planets" component={BodyPlanetas} />
+                    <Route exact path="/planetas" component={BodyPlanetas} />
                     <Route exact path="/" component={Body} />
                     <Route render={() => <h1 className="text-center">no lo encuentro....</h1>} />
                 </Switch>
