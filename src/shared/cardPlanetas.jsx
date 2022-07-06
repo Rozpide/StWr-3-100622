@@ -8,7 +8,7 @@ const CardPlanetas = (props) => {
     return (
         <div className="col-md-3 my-4 ">
             <div className="card">
-                <img src={`https://starwars-visualguide.com/assets/img/planets/${props.planeta.url.replace("http://swapi.tech/api/planets/", "").replace("/", "")}.jpg`} className="card-img-top" id="fotoHeaderCard" />
+                <img src={`https://starwars-visualguide.com/#/planets/${props.planeta.url.replace("http://swapi.tech/api/planets/", "").replace("/", "")}.jpg`} className="card-img-top" id="fotoHeaderCard" />
                 <div className="card-body" id="cardBodyPlanetas">
                     <h5 className="card-title text-center"><ins>{props.planeta.name}</ins></h5>
                     <p className="card-text"><b>Climate:</b> {props.planeta.climate}</p>
