@@ -10,7 +10,7 @@ const Footer = (props) => {
     return (<>
         <div className="row mb-3">
             {
-                props.location.pathname == "/" ?
+                props.location.pathname === "/" ?
                     store.characters !== null &&
                     (<>
                         {
