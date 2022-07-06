@@ -5,7 +5,7 @@ import { Spinner } from "../components/spinner";
 export const Planet = (props) => {
     const { store, actions } = useContext(Context);
     useEffect(() => {
-        actions.getPlanet("https://swapi.dev/api/planets/" + props.match.params.id)
+        actions.getPlanet("https://swapi.tech/api/planets/" + props.match.params.id)
     }, [])
 
     return (<>
@@ -18,7 +18,7 @@ export const Planet = (props) => {
                 : <>
                     <div className="row">
                         <div className="col-md-6 text-center">
-                            <img id="fotoCardPlanet" src={`https://starwars-visualguide.com/assets/img/planets/${props.match.params.id}.jpg`} className="card-img-top" />
+                            <img id="fotoCardPlanet" src={`https://starwars-visualguide.com/#/planets/${props.match.params.id}.jpg`} className="card-img-top" />
                         </div>
 
 

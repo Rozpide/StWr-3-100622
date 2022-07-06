@@ -5,7 +5,7 @@ import { Spinner } from "../components/spinner";
 export const Personaje = (props) => {
     const { store, actions } = useContext(Context);
     useEffect(() => {
-        actions.getCharacter("https://swapi.dev/api/people/" + props.match.params.id)
+        actions.getCharacter("https://swapi.tech/api/people/" + props.match.params.id)
     }, [])
 
     return (<>
@@ -18,7 +18,7 @@ export const Personaje = (props) => {
                 : <>
                     <div className="row">
                         <div className="col-md-6 text-center">
-                            <img id="fotoCardPersonaje" src={`https://starwars-visualguide.com/assets/img/characters/${props.match.params.id}.jpg`} className="card-img-top" />
+                            <img id="fotoCardPersonaje" src={`https://starwars-visualguide.com/#/characters/${props.match.params.id}.jpg`} className="card-img-top" />
                         </div>
 
 
