@@ -8,7 +8,7 @@ export const Header = () => {
         <div className="row my-2 bg-secondary sticky-top">
 
             <div className="col-md-2">
-                <img className="img-fluid logo" src="../img/th.jpg"></img>
+                <img className="img-fluid logo" src="../img/th.jpg" alt="imagen"></img>
             </div>
 
             <div className="col-md-8">
